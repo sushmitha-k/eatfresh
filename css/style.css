@@ -1,0 +1,315 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f1f5f9;
+  margin: 0;
+  padding: 0;
+  line-height: 1.43;
+}
+
+p {
+ color: #555555;
+ font-size: 18px;
+}
+
+a, li {
+  color: #555555;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+/*======= HEADER =======*/
+#main-header {
+  width: 100%;
+  height: 60px;
+  background-color: #009e5f;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  font-weight: 300;
+  letter-spacing: normal;
+  text-align: right;
+  padding: 21px;
+  margin-left: 23px;
+}
+
+.menu-img {
+  margin-right: 13px;
+}
+
+.logo {
+  margin-left: 220px;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: 530;
+}
+
+.btn-order {
+  width: 126px;
+  height: 36px;
+  color: #fff;
+  text-align: center;
+  margin-right: -230px;
+  border-radius: 100px;
+  border: solid 1px #ffffff;
+  background-color: #009e5f;
+}
+
+.btn-lg {
+  width: 226px;
+  height: 42px;
+  border-radius: 21px;
+  padding: 0px 20px;
+  border: none;
+  color: #555555;
+  margin-right: 10px;
+  background-color: #fdc200;
+  display: flex;
+  justify-content: space-around;
+}
+
+.line {
+  width: 1px;
+  height: 16px;
+  opacity: 0.2;
+  background-color: #555555;
+}
+
+.right-arrow {
+  margin-top: 2px;
+}
+
+/*========= Side Nav =========*/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: solid 0.5px rgba(75, 97, 163, 0.24);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #009e5f;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/*========= Drop Down =========*/
+.dropdown {
+  text-align: center;
+  padding-top: 30px;
+}
+
+hr {
+  width: 80px;
+  height: 1px;
+  opacity: 0.3;
+  background-color: #cccccc;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a:hover {
+ color: #009e5f;
+}
+
+.dropdown-btn:hover .dropdown-content {
+ display: block;
+}
+
+/*======= Menu List======*/
+#list-item {
+  text-align: center;
+}
+
+.menu-list-elements {
+  background-color: #f1f5f9;
+  border: none;
+  color: #909090;
+  font-weight: 400;
+  padding: 20px;
+  margin-bottom: 14px;
+}
+
+.menu-list-elements:hover {
+  border-bottom: 2px solid #009e5f;
+}
+
+/*=========== Dates ===========*/
+.date, .date span {
+  color: #999999;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.date span {
+  font-size: 18px;
+}
+
+.date {
+  font-size: 12px;
+}
+
+.active span{
+  color: #009e5f;
+}
+
+.active .selected {
+  border-bottom: 2px solid #009e5f;
+}
+
+
+/*=========== Cards ===========*/
+.card {
+  width: 610px;
+  height: 424px;
+  text-align: center;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+}
+
+.head, .desc {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-item {
+  width: 120px;
+  height: 36px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.btn-item1 {
+  color: #fff;
+  border-radius: 100px;
+  background-color: #009e5f
+}
+
+.btn-borderline {
+  color: #009e5f;
+  font-weight: bold;
+  background-color: #fff;
+  border: solid 1px #999999;
+}
+
+.btn-item3 {
+  padding: 0;
+  color: #999;
+  background-color: #fff;
+  border: solid 1px #999999;
+}
+
+.ver-line {
+  width: 1px;
+  height: 40px;
+  opacity: 0.5;
+  background-color: #cccccc;
+}
+
+.img-2, .img-3, .img-4 {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.desc .title {
+  text-align: left;
+}
+
+.desc p strong {
+  font-size: 14px;
+  color: #777777;
+}
+
+.head p {
+  font-size: 16px;
+}
+
+.desc p {
+  font-size: 10px;
+  color: #909090;
+}
+
+/*=========== Cards ==========*/
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-align: center;
+  flex-direction: row;
+}
+
+.card {
+  margin: 30px auto;
+}
+
+/*======== Media Queries ========*/
+@media screen and (min-width: 750px) {
+  .card-1, .card-3 {
+    float: left;
+    margin: 30px 0px 0px 45px;
+  }
+  .card-2, .card-4 {
+    float: right;
+    margin: 30px 45px 0px 0px;
+  }
+  .card-3, .card-4 {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }  
+}

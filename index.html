@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Eat Fresh</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="main-header">
+    <nav class="main-nav">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Dinner</a>
+        <a href="#">Specials</a>
+        <a href="#">Today</a>
+        <a href="#">Order</a>
+        <a href="#">Pricing</a>
+      </div>
+      <span class="menu" style="cursor:pointer" onclick="openNav()"><img src="img/menu.svg" class="menu-img" alt="menu icon">Menu</span>
+    </nav>
+    <a href="#"><img src="img/eatfreshlogo.png" class="logo" width="115.4px" height="28px" alt="The eat fresh logo"></a>
+    <button class="btn btn-order">Bulk Order</button>
+    <button class="btn btn-lg"><img src="img/shopping-cart.svg" alt="" class="shopping-cart"><span class="line"></span>₹420 / 2 Items<img src="img/right-arrow.svg" alt="" class="right-arrow"></img></button>
+  </header>
+  <!-- Drop Down -->
+  <div class="dropdown">
+    <div class="dropdown-btn"><a href="#">Today’s Menu <img src="img/angle-down.svg" class="arrow" alt="arrow icon"></a>
+      <ul class="dropdown-content">
+        <li><a href="index.html">Initial</a></li>
+        <li><a href="date.html">Date</a></li>
+      </ul>
+    </div>
+    <hr />
+  </div>
+  <!-- Initial layout -->
+  <div id="list-item">
+    <p class="address">2628, 27th main, HSR Layout <img src="img/delete-sign.svg" alt="delete icon"> </p>
+    <div class="menu-list">
+      <button class="menu-list-elements active" data-filter="*">All</button>
+			<button class="menu-list-elements" data-filter=".interior">Veg</button>
+			<button class="menu-list-elements" data-filter=".food">Non - Veg</button>
+			<button class="menu-list-elements" data-filter=".events">Desserts</button>
+			<button class="menu-list-elements" data-filter=".guests">Drinks</button>
+    </div>
+  </div>
+
+  <div id="wrapper">
+    <div class="card card-1">
+      <div class="image">
+        <img src="img/img-1.jpg" width="610px" height="300px" alt="The image of a rice and salad">
+      </div>
+      <div class="content">
+        <div class="head">
+          <p>Spiced Veg with Lemony Bulghar Wheat Salad</p>
+          <p>₹220</p>
+        </div>
+        <div class="desc">
+          <img src="img/oval-1.png" height="40px" width="40px" alt="oval profile photo">
+          <p class="title"><strong>Chef Sundar</strong><br />Exec Chef, Taj Vivinta</p>
+          <span class="ver-line"></span>
+          <p><img src="img/natural-food.svg" height="20px" width="20px" alt="leaf icon"><br />Vegan Food</p>
+          <span class="ver-line"></span>
+          <p><strong style="color:#fdc200;font-size:20px;">3.7</strong><br />Rating</p>
+          <button class="btn btn-item btn-item1 btn-lg"><img src="img/minus-math.png" alt="" class="minus">02<img src="img/plus-math.png" alt="" class="plus"></img></button>
+        </div>
+      </div>
+    </div>
+    <div class="card card-2">
+      <div class="image">
+        <img src="img/img-1.jpg" width="610px" height="300px" alt="Almond Beans Bechamel Chicken with Pasta">
+      </div>
+      <div class="content">
+        <div class="head">
+          <p>Almond Beans Bechamel Chicken with Pasta</p>
+          <p>₹220</p>
+        </div>
+        <div class="desc">
+          <img src="img/oval-1.png" height="40px" width="40px" alt="oval profile photo">
+          <p class="title"><strong>Chef Sundar</strong><br />Exec Chef, Taj Vivinta</p>
+          <span class="ver-line"></span>
+          <p><img src="img/eggs.svg" height="20px" width="20px" alt="eggs icon"><br />Contains Eggs</p>
+          <span class="ver-line"></span>
+          <p><strong style="color:#999999;font-size:20px;">4.1</strong><br />Rating</p>
+          <button class="btn btn-item btn-borderline btn-lg">+ADD</button>
+        </div>
+      </div>
+    </div>
+    <div class="card card-3">
+      <div class="image">
+        <img src="img/img-1.jpg" width="610px" height="300px" alt="Murgh Badam Korma with Banarasi Pulao">
+      </div>
+      <div class="content">
+        <div class="head">
+          <p>Murgh Badam Korma with Banarasi Pulao</p>
+          <p>₹220</p>
+        </div>
+        <div class="desc">
+          <img src="img/oval-1.png" height="40px" width="40px" alt="oval profile photo">
+          <p class="title"><strong>Chef Sundar</strong><br />Exec Chef, Taj Vivinta</p>
+          <span class="ver-line"></span>
+          <p><img src="img/chicken.svg" height="20px" width="20px" alt="chicken icon"><br />Chicken</p>
+          <span class="ver-line"></span>
+          <p><strong style="color:#999999;font-size:20px;">4.0</strong><br />Rating</p>
+          <button class="btn btn-item btn-item3 btn-lg">Out of Stock</button>
+        </div>
+      </div>
+    </div>
+    <div class="card card-4">
+      <div class="image">
+        <img src="img/img-1.jpg" width="610px" height="300px" alt="Spiced Veg with Lemony Bulghar Wheat Salad">
+      </div>
+      <div class="content">
+        <div class="head">
+          <p>Spiced Veg with Lemony Bulghar Wheat Salad</p>
+          <p>₹220</p>
+        </div>
+        <div class="desc">
+          <img src="img/oval-1.png" height="40px" width="40px" alt="oval profile photo">
+          <p class="title"><strong>Chef Sundar</strong><br />Exec Chef, Taj Vivinta</p>
+          <span class="ver-line"></span>
+          <p><img src="img/natural-food-grey.svg" height="20px" width="20px" alt="leaf icon"><br />Vegan Food</p>
+          <span class="ver-line"></span>
+          <p><strong style="color:#999999;font-size:20px;">3.9</strong><br />Rating</p>
+          <button class="btn btn-item btn-borderline btn-lg">+ADD</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

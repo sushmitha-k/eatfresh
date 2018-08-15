@@ -223,6 +223,10 @@ hr {
   justify-content: space-around;
 }
 
+.head .name {
+  margin-right: 100px;
+}
+
 .btn-item {
   width: 120px;
   height: 36px;
